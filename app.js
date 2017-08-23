@@ -9,7 +9,7 @@
 
 function getQuote_click() {    
     $.ajax( {
-        url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+        url: "//quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
         success: function(data) {
             var post = data.shift();            
             $("#quoteRow").html(post.content);
