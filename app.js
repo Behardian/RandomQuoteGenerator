@@ -21,8 +21,7 @@ function getQuote_click() {
     });
 };
 
-function setData_click() {
-    debugger;
+function setData_click() {    
     var phrase = document.getElementById("quoteRow").innerText;
     var tweetUrl = "https://twitter.com/share?text=" + encodeURIComponent(phrase) +
         "." +
